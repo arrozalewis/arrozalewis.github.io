@@ -2,50 +2,74 @@
 <html>
   <head>
     <meta charset="UFT-8"> 
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,100%27">
-    <link rel="stylesheet" type="text/css" href="style.css">	 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,100%27">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      // Menu-toggle button
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>
     <title>Lewis' Page</title>
   </head>
   <body>
-    <nav id="m-nav">
-      <a class="mobile-btn background-blur" onclick="toggleMenu(); return false;">
-	"Show Navigation"
-      </a>
-      <ul id="nav" class="background-blur" style>
-        <li class="active">
-	  <a href="#home">Home</a>
-	</li>
-	<li class>
-	  <a href="about">About Me</a>
-	</li>
-        <li class>
-	<a href="education">Education</a>
-	</li>
-      </ul>
-    </nav>
-    <header id="home">
-    </header>
-    <section id="about" class="dark">
-      <div id="section content">
-	<p>
+    <div class="capsule">
+      <header>
+      	<nav id="m-nav">
+	  <div class="menu">
+          <ul id="nav" class="background-blur" style>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+	    <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="about" class="dark">
+        <div id="section content">
+	  <!--comment>
+	  <p>
 	    <a href="http://java.engin.umich.edu/ParisREU/page4" target = "_blank">paris research</a>
-	</p>
-	<p>
+	  </p>
+	  <p>
 	    <a href="https://www.facebook.com/MorehouseZeroG/" target = "_blank">Flight</a>
-      </div>
-    </section>
-    <section id="education">
-      <div id="section content">
-	<h3> University of Michigan, Ann Arbor 2014-2017 </h3>	
-	<h3> Morehouse College  2011-2014 </h3>	
-      </div>
-    </section>
+	  </p>
+          <comment-->
+        </div>
+      </section>
+      <section id="education">
+        <div id="section content">
+	  <!--comment>	
+	  <h3> University of Michigan, Ann Arbor 2014-2017 </h3>	
+	  <h3> Morehouse College  2011-2014 </h3>	
+          <comment-->
+        </div>
+      </section>
+    </div>    
+	    
     <footer id="footer" class="dark">
       <div class="end of page">
 	      End of Page
       </div>
-    </footer>
+    </footer>    
+	    
     <aside id="social" class="background-blur dark">
       <a class="insta"  href="https://www.instagram.com/icey_hotlj" target= " black" title="Instagram">
         <svg class="icon icon--instagram" viewBox="0 0 1792 1792">
