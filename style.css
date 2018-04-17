@@ -21,6 +21,7 @@ header {
 header .banner {
   position: relative;
   top: 200px;
+  color: white;
 }
 
 .header h1 {
