@@ -91,7 +91,20 @@ nav ul li a {
       color: #fff;
       display: none;
 }
- 
+
+.school-icon {
+    /*
+    position: absolute;
+    left: 0;
+    display: inline;
+    */
+    width: 125px;
+    /*
+    top: 50%;
+    transform: translate(-125%, -35%);
+    */
+}
+
 @media(max-width: 786px) {
  
       .logo {
